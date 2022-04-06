@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag details e summary </title>
+    <style>
+        summary::marker{
+            color: #f00;
+        }
+        details[open] summary::marker{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>cursos do nosso canal</summary>
+        <article>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+        </article>
+    </details>
+</body>
+</html>
