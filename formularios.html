@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag form</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .espaco{
+            margin-bottom: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+        #dv_btns{
+            display: flex;
+
+        }
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+        <label>Nome: </label>
+        <input class="espaco quebra" type="text" name="f_nome" maxlength="30" size="30">
+        <label>Senha: </label>
+        <input class="espaco quebra" type="password" name="senha" maxlength="10">
+        <label class="quebra">Manter login</label>
+        <input type="checkbox" name="manter_login">
+        <label class="quebra">Primeiro login?</label>
+        <input type="radio" name="rd_escolha" value="sim" checked>Sim
+        <input type="radio" name="rd_escolha" value="nao">Não
+        <div id="dv_btns">        
+            <input class="quebra" type="submit" name="f_btn_enviar" value="Gravar">
+            <input type="reset" name="f_btn_reset" value="Limpar">
+        </div>
+</body>
+</html>
