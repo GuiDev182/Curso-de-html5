@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <style>
+        meter{
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
-    <a href="tagA.html" target="main">aula 33</a>
-    <iframe src="http://www.cfbcursos.com.br" name="main"></iframe>
+    <meter id="m1" value="5" max="10" min="0" low="2" high="8" optimum="5"></meter>
+    <script type="text/javascript">
+        document.getElementById("m1").value="4"
+    </script>
 </body>
 </html>
