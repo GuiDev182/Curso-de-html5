@@ -19,12 +19,13 @@
         }
         #dv_btns{
             display: flex;
+            padding: 10px;
 
         }
     </style>
 </head>
 <body>
-    <form name="f_cadastro" action="#" method="get">
+    <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
         <label>Nome: </label>
         <input class="espaco quebra" type="text" name="f_nome" maxlength="30" size="30">
         <label>Senha: </label>
@@ -34,6 +35,37 @@
         <label class="quebra">Primeiro login?</label>
         <input type="radio" name="rd_escolha" value="sim" checked>Sim
         <input type="radio" name="rd_escolha" value="nao">Não
+        <label class="quebra">Hora:</label>
+        <input type="time" name="f_hora" min="09:00" max="17:00">
+        <label class="quebra">Data:</label>
+        <input type="date" name="f_data">
+        <label class="quebra">Data e Hora:</label>
+        <input type="datetime-local" name="f_data_hora">
+        <label class="quebra">Mês:</label>
+        <input type="month" name="f_mes">
+        <label class="quebra">semana:</label>
+        <input type="week" name="f_semana">
+        <label class="quebra">Escolha uma cor:</label>
+        <input type="color" name="f_cor">
+        <label class="quebra">Email:</label>
+        <input type="email" name="f_email">
+        <label class="quebra">Imagem</label>
+        <!--SERVE PARA COLOCAR UMA IMAGEM DE ENVIO, SUBSTITUI O BOTÃO "SUBMIT"-->
+        <input src="thumb/layout-github.png" type="image" name="f_imagem">
+        <label class="quebra">tel:</label>
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxx-xxxx">
+        <label class="quebra">Escolha um numero:</label>
+        <input type="number" step="2" min="2" max="10">
+        <label class="quebra">Pesquisa:</label>
+        <input  class="quebra" type="search">
+        <label class="quebra">file:</label>
+        <input  class="quebra" type="file" multiple accept=".jpg">
+        <label class="quebra">Url:</label>
+        <input  class="quebra" type="url" placeholder="http://" pattern="">
+       
+
+
+
         <div id="dv_btns">        
             <input class="quebra" type="submit" name="f_btn_enviar" value="Gravar">
             <input type="reset" name="f_btn_reset" value="Limpar">
