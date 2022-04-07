@@ -62,9 +62,25 @@
         <input  class="quebra" type="file" multiple accept=".jpg">
         <label class="quebra">Url:</label>
         <input  class="quebra" type="url" placeholder="http://" pattern="">
-       
-
-
+        <label class="quebra">Lista:</label>
+        <input list="f_cores" name="f_cor">
+        <datalist id="f_cores">
+            <option value="red">vermelho</option>
+            <option value="green">verde</option>
+            <option value="blue">Azul</option>
+            <option value="yellow">amarelo</option>
+            <option value="white">branco</option>
+            <option value="gray">cinza</option>
+        </datalist>
+        <p>
+        <fieldset>
+            <legend>Dados</legend>
+            <label>Tag Field</label>
+            <input type="text" name="nome">
+        </fieldset>
+        </p>
+        <label>Tag textarea</label>
+        <textarea name="f_comentario" id="" cols="30" rows="10"></textarea>
 
         <div id="dv_btns">        
             <input class="quebra" type="submit" name="f_btn_enviar" value="Gravar">
