@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid #000;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        thead{
+            color: #0f0;
+            background-color: #eee;           
+        }
+        tbody{
+            color: #00f;
+        }
+        tfoot{
+            color: #f00;
+        }
+        .teste{
+            border: 3px solid #f00;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="4">seminovos</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>fabricante</th>
+                <th>modelo</th>
+                <th>valor</th>
+            </tr>
+            <tr>
+                <td>Honda</td>
+                <td>WRV</td>
+                <td>R$70.000</td>
+            </tr>
+            <tr>
+                <td class="teste">Volkswagem</td>
+                <td>Golf</td>
+                <td>R$50.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">mesclagem de colunas</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
